@@ -43,4 +43,4 @@ sparta coding club Flask  practice
 
 
 #### app.py
-##### 링크와 comment를 입력받으면 crowling  수행 후 db 저장 및 보여줌 
+- ##### 링크와 comment를 입력받으면 crowling  수행 후 db 저장 및 보여줌 
