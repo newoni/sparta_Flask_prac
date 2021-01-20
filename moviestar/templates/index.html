@@ -35,6 +35,7 @@
                 showStar();
             });
 
+            //받아온 데이터 올리기
             function showStar() {
                 $.ajax({
                     type: 'GET',
@@ -95,6 +96,7 @@
                 });
             }
 
+            //입력받은 데이터를 POST
             function likeStar(name) {
                 $.ajax({
                     type: 'POST',
@@ -110,6 +112,7 @@
                 });
             }
 
+            //입력받은 데이터를 POST
             function deleteStar(name) {
                 $.ajax({
                     type: 'POST',

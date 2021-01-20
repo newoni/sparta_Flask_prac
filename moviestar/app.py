@@ -1,5 +1,9 @@
-from pymongo import MongoClient
+'''
+mongoDB 활용, 데이터 입출력
+실행 후 localhost:5000 에서 확인 가능
+'''
 
+from pymongo import MongoClient
 from flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
@@ -21,9 +25,6 @@ def show_stars():
 
     mystars = list(db.mystar.find({},{'_id':False}).sort('like',-1))
 
-
-
-    # 참고) find({},{'_id':False}), sort()를 활용하면 굿!
     # 2. 성공하면 success 메시지와 함께 stars_list 목록을 클라이언트에 전달합니다.
     return jsonify({'result': 'success', 'mystars': mystars})
 
