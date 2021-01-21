@@ -44,3 +44,9 @@ sparta coding club Flask  practice
 
 #### app.py
 - ##### 링크와 comment를 입력받으면 crowling  수행 후 db 저장 및 보여줌 
+
+---
+
+## sell_candle
+- ##### ajax로 환율 데이터 받고 출력
+- ##### 원하는 데이터 입력받고 db저장 및 보여주기
